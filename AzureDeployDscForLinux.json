@@ -70,21 +70,21 @@
             "type": "string",
             "defaultValue": "",
             "metadata": {
-                "description": "The uri of the MOF file/Meta MOF file/resource ZIP file"
+                "description": "https://raw.githubusercontent.com/MyAnonymous01/AzureDeployDscForLinux/master/localhost.meta.zip"
             }
         },
         "registrationUrl": {
             "type": "string",
             "defaultValue": "",
             "metadata": {
-                "description": "The URL of the Azure Automation account"
+                "description": "https://eus2-agentservice-prod-1.azure-automation.net/accounts/8012038c-0d1d-460d-b555-274fd58068e3"
             }
         },
         "registrationKey": {
             "type": "string",
             "defaultValue": "",
             "metadata": {
-                "description": "The access key of the Azure Automation account"
+                "description": "TqeNj6kfTZyUXafD2obMx7EaYyS6tIu2JRe62LVJNhAU2ppCcYRJ8DHVyYUkvv75x4jbROdnXbIvpIiaGcmqTg=="
             }
         }
     },
@@ -103,7 +103,7 @@
         "storageAccountType": "Standard_LRS",
         "imagePublisher": "Canonical",
         "imageOffer": "UbuntuServer",
-        "OSDiskName": "osdiskfordsc"
+        "OSDiskName": "[concat('osdiskfordsc',parameters('vmName')]"
     },
     "resources": [
       {
