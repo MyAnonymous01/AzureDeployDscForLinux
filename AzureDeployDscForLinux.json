@@ -72,23 +72,23 @@
         },
         "fileUri": {
             "type": "string",
-            "defaultValue": "",
+            "defaultValue": "https://raw.githubusercontent.com/MyAnonymous01/AzureDeployDscForLinux/master/localhost.meta.mof",
             "metadata": {
-                "description": "https://raw.githubusercontent.com/MyAnonymous01/AzureDeployDscForLinux/master/localhost.meta.mof"
+                "description": "The uri of the MOF file/Meta MOF file/resource ZIP file"
             }
         },
         "registrationUrl": {
             "type": "string",
-            "defaultValue": "",
+            "defaultValue": "https://eus2-agentservice-prod-1.azure-automation.net/accounts/8012038c-0d1d-460d-b555-274fd58068e3",
             "metadata": {
-                "description": "https://eus2-agentservice-prod-1.azure-automation.net/accounts/8012038c-0d1d-460d-b555-274fd58068e3"
+                "description": "The URL of the Azure Automation account"
             }
         },
         "registrationKey": {
             "type": "string",
-            "defaultValue": "",
+            "defaultValue": "TqeNj6kfTZyUXafD2obMx7EaYyS6tIu2JRe62LVJNhAU2ppCcYRJ8DHVyYUkvv75x4jbROdnXbIvpIiaGcmqTg==",
             "metadata": {
-                "description": "TqeNj6kfTZyUXafD2obMx7EaYyS6tIu2JRe62LVJNhAU2ppCcYRJ8DHVyYUkvv75x4jbROdnXbIvpIiaGcmqTg=="
+                "description": "The access key of the Azure Automation account"
             }
         }
     },
