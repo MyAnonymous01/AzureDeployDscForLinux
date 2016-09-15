@@ -18,6 +18,7 @@
         },
         "newStorageAccountName": {
             "type": "string",
+            "defaultValue": "salinux001",
             "metadata": {
                 "description": "Unique DNS Name for the Storage Account where the Virtual Machine's disks will be placed."
             }
@@ -73,7 +74,7 @@
             "type": "string",
             "defaultValue": "",
             "metadata": {
-                "description": "https://raw.githubusercontent.com/MyAnonymous01/AzureDeployDscForLinux/master/localhost.meta.zip"
+                "description": "https://raw.githubusercontent.com/MyAnonymous01/AzureDeployDscForLinux/master/localhost.meta.mof"
             }
         },
         "registrationUrl": {
