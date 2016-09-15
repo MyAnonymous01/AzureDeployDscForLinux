@@ -4,12 +4,14 @@
     "parameters": {
         "username": {
             "type": "string",
+            "defaultValue": "AdminUser1",
             "metadata": {
                 "description": "Username for the Virtual Machine."
             }
         },
         "password": {
             "type": "securestring",
+            "defaultValue": "LS1setup!0000",
             "metadata": {
                 "description": "Password for the Virtual Machine."
             }
@@ -28,6 +30,7 @@
         },
         "vmSize": {
             "type": "string",
+            "defaultValue": "Standard_D1",
             "metadata": {
                 "description": "VM size"
             },
