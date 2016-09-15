@@ -103,7 +103,7 @@
         "storageAccountType": "Standard_LRS",
         "imagePublisher": "Canonical",
         "imageOffer": "UbuntuServer",
-        "OSDiskName": "[concat('osdiskfordsc',parameters('vmName')]"
+        "OSDiskName": "[concat('osdiskfordsc',parameters('vmName'))]"
     },
     "resources": [
       {
