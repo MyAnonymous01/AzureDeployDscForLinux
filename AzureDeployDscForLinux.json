@@ -29,6 +29,12 @@
                 "description": "Name of the vm, will be used as DNS Name for the Public IP used to access the Virtual Machine."
             }
         },
+        "networkSecurityGroupName": {
+
+            "type": "String"
+
+            "defaultValue": "nsglinux001"
+        },
         "vmSize": {
             "type": "string",
             "defaultValue": "Standard_D1",
@@ -79,14 +85,14 @@
         },
         "registrationUrl": {
             "type": "string",
-            "defaultValue": "https://eus2-agentservice-prod-1.azure-automation.net/accounts/8012038c-0d1d-460d-b555-274fd58068e3",
+            "defaultValue": "https://eus2-agentservice-prod-1.azure-automation.net/accounts/0ebd76be-11fc-446d-afae-727ef8601395",
             "metadata": {
                 "description": "The URL of the Azure Automation account"
             }
         },
         "registrationKey": {
             "type": "string",
-            "defaultValue": "TqeNj6kfTZyUXafD2obMx7EaYyS6tIu2JRe62LVJNhAU2ppCcYRJ8DHVyYUkvv75x4jbROdnXbIvpIiaGcmqTg==",
+            "defaultValue": "2CgqSo5NKjJTDYNiczGcN9E53tbk7gLZw0MeYnFl+ET0Ld/rF11MSy+r36KcIRqZsQy5FzIWqkzzA2xTULEiZg==",
             "metadata": {
                 "description": "The access key of the Azure Automation account"
             }
@@ -175,7 +181,13 @@
                 }
               }
             }
-          ]
+          ],
+
+          "networkSecurityGroup": {
+
+              "id": "[resourceId('Microsoft.Network/networkSecurityGroups', parameters('networkSecurityGroupName'))]"
+
+          }
         }
       },
       {

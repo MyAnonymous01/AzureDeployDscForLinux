@@ -3,35 +3,35 @@
 	{
 	ResourceID = "[ConfigurationRepositoryWeb]AzureAutomationDSC";
 	 SourceInfo = "C:\\OaaS-RegistrationMetaConfig2.ps1::20::9::ConfigurationRepositoryWeb";
-	 RegistrationKey = "TqeNj6kfTZyUXafD2obMx7EaYyS6tIu2JRe62LVJNhAU2ppCcYRJ8DHVyYUkvv75x4jbROdnXbIvpIiaGcmqTg=="; 
-	 ServerURL = "https://eus2-agentservice-prod-1.azure-automation.net/accounts/8012038c-0d1d-460d-b555-274fd58068e3";
+	 RegistrationKey = "2CgqSo5NKjJTDYNiczGcN9E53tbk7gLZw0MeYnFl+ET0Ld/rF11MSy+r36KcIRqZsQy5FzIWqkzzA2xTULEiZg=="; 
+	 ServerURL = "https://eus2-agentservice-prod-1.azure-automation.net/accounts/0ebd76be-11fc-446d-afae-727ef8601395";
 	};
 
 	instance of MSFT_WebResourceManager as $MSFT_WebResourceManager1ref
 	{
 	 SourceInfo = "C:\\OaaS-RegistrationMetaConfig2.ps1::27::9::ResourceRepositoryWeb";
-	 ServerURL = "https://eus2-agentservice-prod-1.azure-automation.net/accounts/8012038c-0d1d-460d-b555-274fd58068e3";
+	 ServerURL = "https://eus2-agentservice-prod-1.azure-automation.net/accounts/0ebd76be-11fc-446d-afae-727ef8601395";
 	 ResourceID = "[ResourceRepositoryWeb]AzureAutomationDSC";
-	 RegistrationKey = "TqeNj6kfTZyUXafD2obMx7EaYyS6tIu2JRe62LVJNhAU2ppCcYRJ8DHVyYUkvv75x4jbROdnXbIvpIiaGcmqTg=="; 
+	 RegistrationKey = "2CgqSo5NKjJTDYNiczGcN9E53tbk7gLZw0MeYnFl+ET0Ld/rF11MSy+r36KcIRqZsQy5FzIWqkzzA2xTULEiZg=="; 
 	};
 
 	instance of MSFT_WebReportManager as $MSFT_WebReportManager1ref
 	{
 	 SourceInfo = "C:\\OaaS-RegistrationMetaConfig2.ps1::34::9::ReportServerWeb";
-	 ServerURL = "https://eus2-agentservice-prod-1.azure-automation.net/accounts/8012038c-0d1d-460d-b555-274fd58068e3";
+	 ServerURL = "https://eus2-agentservice-prod-1.azure-automation.net/accounts/0ebd76be-11fc-446d-afae-727ef8601395";
 	 ResourceID = "[ReportServerWeb]AzureAutomationDSC";
-	 RegistrationKey = "TqeNj6kfTZyUXafD2obMx7EaYyS6tIu2JRe62LVJNhAU2ppCcYRJ8DHVyYUkvv75x4jbROdnXbIvpIiaGcmqTg=="; 
+	 RegistrationKey = "2CgqSo5NKjJTDYNiczGcN9E53tbk7gLZw0MeYnFl+ET0Ld/rF11MSy+r36KcIRqZsQy5FzIWqkzzA2xTULEiZg=="; 
 	};
 
 	instance of MSFT_DSCMetaConfiguration as $MSFT_DSCMetaConfiguration1ref
 	{
 	 RefreshMode = "Pull";
-	 AllowModuleOverwrite = True;
+	 AllowModuleOverwrite = False;
 	 ActionAfterReboot = "ContinueConfiguration";
 	 RefreshFrequencyMins = 30;
-	 RebootNodeIfNeeded = True;
+	 RebootNodeIfNeeded = False;
 	 ConfigurationModeFrequencyMins = 15;
-	 ConfigurationMode = "ApplyAndAutoConfig";
+	 ConfigurationMode = "ApplyAndMonitor";
 
 	  ResourceModuleManagers = {
 	  $MSFT_WebResourceManager1ref  
