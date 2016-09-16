@@ -32,8 +32,8 @@
         "networkSecurityGroupName": {
 
             "type": "String"
-
-            "defaultValue": "nsglinux001"
+,
+            "defaultValue": "nslinux001"
         },
         "vmSize": {
             "type": "string",
