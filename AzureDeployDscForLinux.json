@@ -138,6 +138,52 @@
         }
       },
       {
+
+        "type": "Microsoft.Network/networkSecurityGroups",
+
+        "name": "[parameters('networkSecurityGroupName')]",
+
+        "apiVersion": "2015-06-15",
+
+        "location": "[parameters('location')]",
+
+        "properties": {
+
+            "securityRules": [
+
+                {
+
+                    "name": "default-allow-ssh",
+
+                    "properties": {
+
+                        "priority": 1000,
+
+                        "sourceAddressPrefix": "*",
+
+                        "protocol": "TCP",
+
+                        "destinationPortRange": "22",
+
+                        "access": "Allow",
+
+                         "direction": "Inbound",
+
+                        "sourcePortRange": "*",
+
+                        "destinationAddressPrefix": "*"
+
+                    }
+
+                }
+
+            ]
+
+        }
+
+      },
+
+      {
         "apiVersion": "[variables('api-version')]",
         "type": "Microsoft.Network/virtualNetworks",
         "name": "[variables('virtualNetworkName')]",
