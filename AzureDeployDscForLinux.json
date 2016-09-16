@@ -6,8 +6,8 @@
         "location": {
 
             "type": "String"
-
-            "defaultValue": "eastus2",
+,
+            "defaultValue": "eastus2"
         },
         "username": {
             "type": "string",
