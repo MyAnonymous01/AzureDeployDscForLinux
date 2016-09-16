@@ -2,11 +2,8 @@
     "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
     "contentVersion": "1.0.0.0",
     "parameters": {
-
         "location": {
-
-            "type": "String"
-,
+            "type": "String",
             "defaultValue": "eastus2"
         },
         "username": {
@@ -36,12 +33,10 @@
                 "description": "Name of the vm, will be used as DNS Name for the Public IP used to access the Virtual Machine."
             }
         },
-        "networkSecurityGroupName": {
-
-            "type": "String"
-,
-            "defaultValue": "nslinux001"
-        },
+      "networkSecurityGroupName": {
+        "type": "String",
+        "defaultValue": "nslinux001"
+      },
         "vmSize": {
             "type": "string",
             "defaultValue": "Standard_D1",
