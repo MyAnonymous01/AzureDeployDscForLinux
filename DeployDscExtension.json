@@ -39,6 +39,7 @@
         },
         "nodeConfigurationName": {
             "type": "string",
+          "defaultValue": "WFConfig.WS2012R2DC004",
             "metadata": {
                 "description": "The name of the node configuration, on the Azure Automation DSC pull server, that this node will be configured as"
             }
