@@ -4,6 +4,7 @@
     "parameters": {
         "vmName": {
             "type": "string",
+            "defaultValue": "WS2012R2DC002",
             "metadata": {
                 "description": "Name of the existing VM to apply the DSC configuration to"
             }
